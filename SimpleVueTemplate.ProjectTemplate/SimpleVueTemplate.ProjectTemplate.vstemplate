@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>SimpleVueTemplate</Name>
+		<Description>Simple template for creating an ASP.NET Core (.NET 5) API + Vue 3.0 project</Description>
+		<Icon>SimpleVueTemplate.ProjectTemplate.png</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<LanguageTag>csharp</LanguageTag>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>87c33220-f6d4-4b2b-bbcd-7529a79b7412</TemplateID>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>SimpleVueTemplate</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+
+		<!-- Specifies that the files should actually be created in place in the target folder. Without this,
+         it seems the files just don't go anywhere!. -->
+		<CreateInPlace>true</CreateInPlace>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="ProjectTemplate.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+			<Folder Name="Properties" TargetFolderName="Properties">
+				<ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+			</Folder>
+			<Folder Name="ClientApp" TargetFolderName="ClientApp">
+				<Folder Name="public" TargetFolderName="public">
+					<ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+				</Folder>
+				<Folder Name="src" TargetFolderName="src">
+					<Folder Name="assets" TargetFolderName="assets">
+						<ProjectItem ReplaceParameters="false" TargetFileName="logo.png">logo.png</ProjectItem>
+					</Folder>
+					<Folder Name="components" TargetFolderName="components">
+						<ProjectItem ReplaceParameters="false" TargetFileName="HelloWorld.vue">HelloWorld.vue</ProjectItem>
+					</Folder>
+					<ProjectItem ReplaceParameters="false" TargetFileName="App.vue">App.vue</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="main.js">main.js</ProjectItem>
+				</Folder>
+				<ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="babel.config.js">babel.config.js</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="jsconfig.json">jsconfig.json</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="package-lock.json">package-lock.json</ProjectItem>
+				<ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="vue.config.js">vue.config.js</ProjectItem>
+			</Folder>
+			<ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="VueDevelopmentServerMiddlewareExtensions.cs">VueDevelopmentServerMiddlewareExtensions.cs</ProjectItem>
+		</Project>
+	</TemplateContent>
+</VSTemplate>
