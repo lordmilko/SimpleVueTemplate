@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="SimpleVueTemplate.4bc0ee6c-c915-4c42-8447-c632b4d37e8e" Version="0.1" Language="en-US" Publisher="lordmilko" />
+        <Identity Id="SimpleVueTemplate.4bc0ee6c-c915-4c42-8447-c632b4d37e8e" Version="0.2" Language="en-US" Publisher="lordmilko" />
         <DisplayName>SimpleVueTemplate</DisplayName>
         <Description xml:space="preserve">Simple template for creating an ASP.NET Core (.NET 5) API + Vue 3.0 project</Description>
         <Icon>logo.png</Icon>
